@@ -6,5 +6,7 @@ public class Parameters {
 
 	
 	//This is second example that is from github
+	
+	//this is a third example
 
 }
