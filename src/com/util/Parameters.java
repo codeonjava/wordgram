@@ -3,28 +3,12 @@ package com.util;
 public class Parameters {
 	
 	public static final String NAME="wordgram";
-
+//this is a good
+	//this is a good
+	//this is a good
+	//this is a good
+	//this is a good
+	//this is a good
+	//this is a good
 	
-	//This is second example that is from github
-	
-	//this is a third example
-
- //HOHOHO
-	//HOHOH
-	//HOHO
-//so do you want this
-//What you want on this one
-
-//Going well on this one
-	
-	//conflict occur
-
- 
-// now conflict test
-// now conflict test
-// now conflict test
- 
- //ok
-	//ok
- 
 }
