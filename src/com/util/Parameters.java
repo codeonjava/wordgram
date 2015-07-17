@@ -6,15 +6,7 @@ public class Parameters {
  
 //this is a good
 	//this is a good
-	//this is a good
-	//this is a good
-	//this is a good
-	//this is a good
-	//this is a good
-	
  
-
-	//This is a test
 
   
 }
