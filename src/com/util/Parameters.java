@@ -4,27 +4,7 @@ public class Parameters {
 	
 	public static final String NAME="wordgram";
 
-	
-	//This is second example that is from github
-	
-	//this is a third example
+	//This is a test
 
- //HOHOHO
-	//HOHOH
-	//HOHO
-//so do you want this
-//What you want on this one
-
-//Going well on this one
-	
-	//conflict occur
-
- 
-// now conflict test
-// now conflict test
-// now conflict test
- 
- //ok
-	//ok
  
 }
