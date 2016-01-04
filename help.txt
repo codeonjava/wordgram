@@ -7,6 +7,10 @@ forth
 fifth
 fifth
 Sixth
+<<<<<<< HEAD
 manoj manandhar test it once again
 now goint to create a conflict
 
+=======
+now goint to create a conflict
+>>>>>>> codeonjava5/conflictBranch
