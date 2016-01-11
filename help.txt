@@ -1,5 +1,9 @@
+
 manoj
 now this must create a conflict
+:qw
+
+>>>>>>> codeonjava5/master
 want to create a conflict on pull request
 Third line is added
 Fourth
@@ -28,4 +32,5 @@ manoj loves sabina
 22222222222222222222222
 2
 haha now this will create and merge conflict
+777777777777777777777777777777777777777777777777777777777
 
