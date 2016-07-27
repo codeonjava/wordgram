@@ -1,0 +1,147 @@
+http://localhost:9200/myanalyzer/
+
+
+{
+  "mappings": {
+    "author": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "ac": {
+          "type": "completion",
+          "index_analyzer": "wordgram",
+          "search_analyzer": "wordgram",
+          "payloads": true
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+localhost:9200/myanalyzer/author/1
+
+{
+"name" : "Manoj Manandhar Philadelphia PA USA",
+"ac" : [ "Manoj Manandhar Philadelphia PA USA" ]
+}
+
+
+{
+  "authorsAutocomplete": {
+    "text": "man",
+    "completion": {
+      "field": "ac"
+    }
+  }
+}
+
+{
+"query":{
+"match_all":{}
+}
+}
+
+-=====================
+http://localhost:9200/wordgramtest
+
+{
+  "mappings": {
+    "author": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "ac": {
+          "type": "completion",
+          "index_analyzer": "wordgram",
+          "search_analyzer": "wordgram",
+          "payloads": true
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+http://localhost:9200/myanalyzer/
+{
+    "properties": {
+        "title": {
+            "type":      "string",
+            "analyzer":  "my_analyzer"
+        }
+    }
+}
+
+PUT
+http://localhost:9200/myanalyzer/   
+
+PUT        
+http://localhost:9200/myanalyzer/mytype/_mapping/
+
+{
+  "mytype": {
+    "properties": {
+      "title": {
+        "type": "string",
+        "analyzer": "nGram"
+      }
+    }
+  }
+}
+
+http://localhost:9200/myanalyzer/mytype/1
+{
+"title" : "coll name total records successful load records loaded delete records records deleted"
+ }
+
+http://localhost:9200/testtt/_analyze?analyzer=wordgram&pretty=true&text=coll%20name%20total%20records%20successful%20load%20records%20loaded%20delete%20records%20records%20deleted
+
+========Mapping of a type================
+http://localhost:9200/wordgramtest/
+{
+  "mappings": {
+    "author": {
+      "properties": {
+        
+        "ac": {
+          "type": "completion",
+          "index_analyzer": "wordgram",
+          "search_analyzer": "phrase",
+          "payloads": true
+        }
+      }
+    }
+  }
+}
+==================Insert single data===================
+http://localhost:9200/wordgramtest/author/2
+{
+"name" : "coll name total records successful load records loaded delete records records deleted",
+"ac" : [ "coll name total records successful load records loaded delete records records deleted" ]
+}
+
+===============Searching data=====================
+
+
+http://localhost:9200/wordgramtest/_suggest?pretty
+
+{
+  "suggestion": {
+    "text": "coll",
+    "completion": {
+      "field": "ac"
+    }
+  }
+}
+
+
+

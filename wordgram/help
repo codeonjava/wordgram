@@ -1,0 +1,10 @@
+All the build path library are inside elasticsearhX.X\lib folder
+
+installing plugin
+
+plugin --url file:///d:/wordgram.jar --install wordgram
+
+
+removing plugins
+
+plugin --remove wordgram

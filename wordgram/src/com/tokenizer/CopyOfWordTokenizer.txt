@@ -1,0 +1,38 @@
+package com.tokenizer;
+
+import java.io.IOException;
+import java.io.Reader;
+
+import org.apache.lucene.analysis.Tokenizer;
+import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
+
+public class CopyOfWordTokenizer extends Tokenizer {
+
+	protected CharTermAttribute charTermAttribute = addAttribute(CharTermAttribute.class);
+
+	@Override
+	public boolean incrementToken() throws IOException {
+
+		// Clear anything that is already saved in this.charTermAttribute
+		this.charTermAttribute.setEmpty();
+		this.charTermAttribute.append(stringToTokenize);
+		System.out.println(this.charTermAttribute);
+		return true;
+
+	}
+
+	public CopyOfWordTokenizer(Reader reader) {
+		super(reader);	 
+	}
+
+	private String stringToTokenize;
+	protected int position = 0;
+
+	public void setPosition(int position) {
+		this.position = position;
+	}
+
+	public void setStringToTokenize(String stringToTokenize) {
+		this.stringToTokenize = stringToTokenize;
+	}
+}
