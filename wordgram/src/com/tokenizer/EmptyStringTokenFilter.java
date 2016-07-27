@@ -44,7 +44,7 @@ public class EmptyStringTokenFilter extends TokenFilter {
 
 		}
  
-//trying to test it and the ans and asdfadf more to do this afasf afaf
+//trying to test it and the ans and asdfadf more to do this afasf afaf asdasfdasdf
  
 		// Save the current token
 		this.charTermAttribute.setEmpty().append(nextToken);
