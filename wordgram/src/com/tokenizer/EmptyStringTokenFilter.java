@@ -45,7 +45,9 @@ public class EmptyStringTokenFilter extends TokenFilter {
 		}
  
 //trying to test it and the ans and asdfadf more to do this afasf afaf asdasfdasdf
- //adfdaf
+ 
+ //adfdaf dsf
+ 
 		// Save the current token
 		this.charTermAttribute.setEmpty().append(nextToken);
 		this.positionIncrementAttribute.setPositionIncrement(1);
